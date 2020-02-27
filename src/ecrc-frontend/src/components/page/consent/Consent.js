@@ -96,7 +96,7 @@ export default function Consent({ page: { header } }) {
     <main>
       <Header header={header} />
       <div className="page">
-        <div className="content col-md-8">
+        <div className="content">
           <h1>Consent for Criminal Record Check</h1>
           <Declaration
             style={{ paddingBottom: "30px" }}
@@ -109,6 +109,7 @@ export default function Consent({ page: { header } }) {
           <br />
           <div className="buttons" style={{ paddingLeft: "20px" }}>
             <Button
+              style={{ fontSize: "12px" }}
               button={cancelButton}
               onClick={() => {
                 setToHome(true);
